@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stethacanthus</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- The unique elements and attributes on this file are the menu, address, time, dateTime, and type:
+            - The menu element is found nested in the header under the nav element
+            - The address element is found in nested in the footer element
+            - The time element is found in the first section element underneath the h3 "Quick Facts" in the
+              first list item
+            - The dateTime attribute is found in the same location as the time element
+            - The type attribute is found in the order list element in the first section underneath the h3
+              "Quick Facts"
+    -->
+     <header role="banner">
+        <h1>Strange World of Sharks</h1>
+        <h2>Stethacanthus</h2>
+        <nav class="nav" role="navigation">
+            <menu>
+                <!-- The menu element: a alternative to ul, and treated the same as ul
+                     by browsers. Here, it is appropriate to use it for listing the
+                     different links for navigation as an unordered list
+                -->
+                <li><a href="index.html" title="Home Page">Home Page</a></li>
+                <li><a href="thresher.html" title="Thresher Shark">Thresher Shark</a></li>
+                <li><a href="greenland.html" title="Greenland Shark">Greenland Shark</a></li>
+                <li><a href="stethacanthus.html" title="Stethacanthus">Stethacanthus</a></li>
+            </menu>
+        </nav>
+     </header>
+
+     <main role="main">
+        <article role="article">
+            <section class="content_container">
+                <h3>Quick Facts</h3>
+                <p>
+                    <!-- the type attribute: For an ol, it sets what symbol/alphabet to use, it can be the typical
+                         alphabet system we use as either capital or lowercase, or even as roman numerals as capital
+                         or lower case numbers.-->
+                    <ol type="I">
+                        <li><b><u>First discovered:</u></b> 1800s</li>
+                        <li><b><u>Habitat:</u></b> Oceans all over the world</li>
+                        <li><b><u>Conservation Status:</u></b> Extinct</li>
+                        <li><b><u>Size:</u></b> 1.5m (4.9ft)</li>
+                        <li><b><u>Danger to Humans:</u></b> Not Applicable</li>
+                    </ol>
+                </p>
+            </section>
+            <section class="content_container">
+                <h3>Overview</h3>
+                <p>
+                    <img src="images/stethacanthus.jpg" alt="Stethacanthus" class="imageFlowRight">
+                    The Stethacanthus (also known as the anvil shark) is an extinct genus of the ancestors of sharks. It lived
+                    during the Late Devonian to Late Carboniferous period, dying out around 300 million years ago according
+                    to pop-science. Although this animal is extinct, I felt it was still appropriate to include it since it is
+                    one of the most bizarre creatures I've ever seen.
+                </p>
+                <p>
+                    Upon first seeing the long, sharp spines near its fins, the man who first discovered the anvil shark, the 
+                    Paleontologist John Strong Newberry thought that they were supposed to be a new type of dorsal fin.
+                    However, complete remains of the anvil shark were extremely rare, and for nearly a century, not much could
+                    be said about the spines, or the animal in general, for a long time.
+                </p>
+                <p>
+                    It's diet comprised of small fish and animals that would be considered bottom-dwellers. Due to this, it is
+                    thought that the anvil shark was a bottom-dwelling predator.
+                </p>
+                <p>
+                    The teeth were strange as well, with each tooth having multiple sharp points or "spikes". However, it didn't
+                    just had teeth in its jaws, it had similar structures on its head, throat, and the "anvil" on its back.
+                    It's not clear what these features were for, whether they were for attracting mates, scaring off predators, or
+                    for a different reason.
+                </p>
+            </section>
+            <section class="content_container">
+                <h3>References</h3>
+                    <ul>
+                        <li><b><a 
+                                href="https://rexmachinablog.com/2018/07/28/3-ancient-sharks-weird/" 
+                                title="rexmachinablog.com" 
+                                target="_blank">
+                            Photo Source!
+                        </a></b></li>
+                        <li><a 
+                                href="https://en.wikipedia.org/wiki/Stethacanthus" 
+                                title="wikipedia.org" 
+                                target="_blank">
+                            Wikipedia
+                        </a></li>
+                        <li><a 
+                                href="https://www.thoughtco.com/history-of-stethacanthus-1093704" 
+                                title="thoughtco.com" 
+                                target="_blank">
+                            ThoughtCo
+                        </a></li>
+                        <li><a 
+                                href="https://www.youtube.com/watch?v=0QuxE73nsEQ&t=33s" 
+                                title="youtube.com" 
+                                target="_blank">
+                            Jagology
+                        </a></li>
+                    </ul>
+            </section>
+        </article>
+     </main>
+     <footer role="contentinfo">
+        <p>
+            Sharks are an important species for the oceans and the planet as a whole. To learn more about conservation,
+            please visit:<br>
+            <!-- The address element: Indicates that the content given gives contact information for a person, organization
+                 or other type of group. It can include any type of contact information such as an address, website link,
+                 phone number or any other type of information. Here it is used in the footer as a way for the user to take 
+                 a look an organization that helps in shark conservation.-->
+            <address>
+                <a href="https://sharkstewards.org/" title="sharkstewards.org" target="_blank" class="conservation">
+                    <b>Shark Stewards</b>
+                </a>
+                <p>2150 Allston Way, Suite 460 Berkeley, CA 94704</p>
+            </address>
+        </p>
+     </footer>
+</body>
+</html>

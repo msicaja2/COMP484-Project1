@@ -1,0 +1,108 @@
+html {
+    background-image: url("images/background.png"); /*Adds image to the background*/
+    background-attachment: fixed; /*Prevents the image from moving when scrolling through the page*/
+}
+
+h1, h2, h3 {
+    color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    background-color: #1c2841;
+    text-align: center; /*Centers the text inside the header*/
+    color: white;
+    border-radius: 0.1em; /*Makes corners look softer on the element*/
+    padding: 0.1em;
+}
+
+h2 {
+    font-weight: bolder;
+    text-align: center;
+    line-height: 1.5em;
+    color: #006994;
+    border-bottom: 0.1em solid #006994;
+}
+
+a {
+    color: white;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+ul {
+    line-height: 1.6em;
+}
+
+ol {
+    line-height: 1.6em;
+}
+
+body {
+    width: 75%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1.2em;
+    padding: 1em;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.nav menu {
+    text-align: center;
+    list-style: none;
+    line-height: 1.7em;
+    background-color: #36454f;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+.nav a {
+    color: white;
+    display: block;
+    text-decoration: none; /*Removes underline on links*/
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.nav a:hover {
+    background-color: #4c516d;
+}
+
+.content_container {
+    background-color: #4c516d;
+    padding-left: 1em;
+    padding-top: 0.01em;
+    padding-bottom: 0.01em;
+    padding-right: 1em;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    overflow: auto; /*Prevents items like images from leaking out of the section container*/
+}
+
+footer {
+    border-top: 0.1em solid #000080;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.conservation {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 1.5em;
+    color: #006994;
+}
+
+.imageFlowRight {
+    float: right;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    max-width: 50%;
+    height: auto;
+    border: 0.5em solid black;
+    border-radius: 0.5em;
+}

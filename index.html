@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharks</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- The unique elements and attributes on this file are the menu, address, and start:
+            - The menu element is found nested in the header under the nav element
+            - The address element is found in nested in the footer element
+            - The start attribute is found in the section element, it is right below the
+              first ordered list and the p element right underneath it
+    -->
+     <header role="banner">
+        <h1>Strange World of Sharks</h1>
+        <h2>Home Page</h2>
+        <nav class="nav" role="navigation">
+            <menu>
+                <!-- The menu element: a alternative to ul, and treated the same as ul
+                     by browsers. Here, it is appropriate to use it for listing the
+                     different links for navigation as an unordered list
+                -->
+                <li><a href="index.html" title="Home Page">Home Page</a></li>
+                <li><a href="thresher.html" title="Thresher Shark">Thresher Shark</a></li>
+                <li><a href="greenland.html" title="Greenland Shark">Greenland Shark</a></li>
+                <li><a href="stethacanthus.html" title="Stethacanthus">Stethacanthus</a></li>
+            </menu>
+        </nav>
+     </header>
+
+     <main role="main">
+        <article role="article">
+            <section class="content_container">
+                <h3>Welcome!</h3>
+                <p>
+                    <img src="images/greate_white_shark.jpg" alt="Great White Shark" class="imageFlowRight">
+                    Hello and welcome! I've dedicated this website to my favorite type of animal, sharks! Sharks are
+                    some of the most misunderstood animals, especially in pop culture. With films like Jaws and other
+                    flicks demonizing sharks, it's easy to forget that they are just animals, not monsters. Due to this
+                    perception of sharks, it makes people unaware of their importance to the marine ecosystem, and has
+                    led to the overfishing of these amazing creatures.
+                </p>
+                <p>
+                    However, shark conservation isn't the main point of this website (if you want to learn more about shark
+                    conservation, please take a look at the organization at the bottom of the pages on this site). The point
+                    of this website is to show how truly unique these animals can be. They come in many shapes and sizes. I
+                    also wish to show why these are my favorite animals.
+                </p>
+                <p>
+                    We will not focus on the scariest or dangerous sharks, but more on the weirdest and unique sharks that
+                    have and still roam the blue depths of the ocean. To show you what I mean, you would typically rank sharks
+                    by their danger in an order like this (again, they are just animals, but animals can still be dangerous):
+                </p>
+                <ol>
+                    <li>Bull Shark</li>
+                    <li>Tiger Shark</li>
+                    <li>Great White Shark</li>
+                </ol>
+                <p>...and so on, but even the most dangerous of the three sharks would rank at the highest like this:</p>
+                <!-- the start attribute: this sets the starting integer for an ordered list (ol). It always displays an
+                     arabic numeral even if the TYPE is set to roman numerals. Here, it is used to start our ordered list
+                     at 50, as a way to show that the sharks presented on this website are not dangerous to people
+                -->
+                <ol start="50">
+                    <li>Greenland Shark</li>
+                    <li>Thresher Shark</li>
+                </ol>
+                <p>...and again so on (just as a side note, this ranking isn't from any official source, it is just an
+                    example I came up with). So with that out of the way, I welcome you to learn about the three spotlight
+                    sharks of this website:
+                </p>
+                <ul>
+                    <li><a href="thresher.html" title="Thresher Shark"><b><u>The Thresher Shark</u></b></a></li>
+                    <li><a href="greenland.html" title="Greenland Shark"><b><u>The Greenland Shark</u></b></a></li>
+                    <li><a href="stethacanthus.html" title="Stethacanthus"><b><u>Stethacanthus (The Anvil Shark)</u></b></a></li>
+                </ul>
+            </section>
+            <section class="content_container">
+                <h3>Photo Sources: </h3>
+                <ul>
+                    <li><a 
+                            href="https://www.fisheries.noaa.gov/species/white-shark" 
+                            title="fisheries.noaa.gov" 
+                            target="_blank">
+                        NOAA Fisheries (Shark Photo)
+                    </a></li>
+                    <li>Background Photo generated using ChatGPT</li>
+                </ul>
+            </section>
+        </article>
+     </main>
+     <footer role="contentinfo">
+        <p>
+            Sharks are an important species for the oceans and the planet as a whole. To learn more about conservation,
+            please visit:<br>
+            <!-- The address element: Indicates that the content given gives contact information for a person, organization
+                 or other type of group. It can include any type of contact information such as an address, website link,
+                 phone number or any other type of information. Here it is used in the footer as a way for the user to take 
+                 a look an organization that helps in shark conservation.-->
+            <address>
+                <a href="https://sharkstewards.org/" title="sharkstewards.org" target="_blank" class="conservation">
+                    <b>Shark Stewards</b>
+                </a>
+                <p>2150 Allston Way, Suite 460 Berkeley, CA 94704</p>
+            </address>
+        </p>
+     </footer>
+</body>
+</html>

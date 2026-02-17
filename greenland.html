@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenland Shark</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- The unique elements and attributes on this file are the menu, address, time, dateTime, and type:
+            - The menu element is found nested in the header under the nav element
+            - The address element is found in nested in the footer element
+            - The time element is found in the first section element underneath the h3 "Quick Facts" in the
+              first list item
+            - The dateTime attribute is found in the same location as the time element
+            - The type attribute is found in the order list element in the first section underneath the h3
+              "Quick Facts"
+    -->
+     <header role="banner">
+        <h1>Strange World of Sharks</h1>
+        <h2>Greenland Shark</h2>
+        <nav class="nav" role="navigation">
+            <menu>
+                <!-- The menu element: a alternative to ul, and treated the same as ul
+                     by browsers. Here, it is appropriate to use it for listing the
+                     different links for navigation as an unordered list
+                -->
+                <li><a href="index.html" title="Home Page">Home Page</a></li>
+                <li><a href="thresher.html" title="Thresher Shark">Thresher Shark</a></li>
+                <li><a href="greenland.html" title="Greenland Shark">Greenland Shark</a></li>
+                <li><a href="stethacanthus.html" title="Stethacanthus">Stethacanthus</a></li>
+            </menu>
+        </nav>
+     </header>
+
+     <main role="main">
+        <article role="article">
+            <section class="content_container">
+                <h3>Quick Facts</h3>
+                <p>
+                    <!-- the type attribute: For an ol, it sets what symbol/alphabet to use, it can be the typical
+                         alphabet system we use as either capital or lowercase, or even as roman numerals as capital
+                         or lower case numbers.-->
+                    <ol type="I">
+                        <!-- time element: represents a specific period in time. Helps in converting the given text into
+                             a machine readable date. Also helps with search engine results and reminders. In this case, it
+                             is appropriate in showing a specific date/year to display when the shark was first discovered.
+                             datetime attribute: indicates the time or date specified in the time element. It must be in a
+                             specific format, with the list of allowed formats available at: 
+                             https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/time#valid_datetime_values
+                             -->
+                        <li><b><u>First discovered:</u></b> <time datetime="1801">1801</time></li>
+                        <li><b><u>Habitat:</u></b>
+                            Can be found in depths as low as nearly 4000ft in waters with temperatures between 34-68&deg;F
+                        </li>
+                        <li><b><u>Conservation Status:</u></b> NEAR THREATENED</li>
+                        <li><b><u>Size:</u></b> Typically 8-14ft, but can reach 24ft</li>
+                        <li><b><u>Danger to Humans:</u></b> Nearly none, only one reported attack</li>
+                    </ol>
+                </p>
+            </section>
+            <section class="content_container">
+                <h3>Overview</h3>
+                <p>
+                    <img src="images/greenland_shark.jpg" alt="Greenland Shark" class="imageFlowRight">
+                    The Greenland shark is certainly very unique, even more so than the thresher shark. Aside from
+                    being called the Greenland shark, they are also known as the grey shark and gurry shark. They typically 
+                    eat smaller sharks, fish, eels, etc., and will also scavenge for food.
+                </p>
+                <p>
+                    They move very slowly and expend as little energy as possible. Thanks to their slow metabolism, they don't
+                    require a lot of calories to stay alive, which is why they are very slow. They are so slow, in fact, that
+                    many unathletic people can outswim them.
+                </p>
+                <p>
+                    There are more interesting things about their biology. These sharks are actually blind due to a parasite in
+                    their eye. This isn't a problem for them, though, because they like to live deep underwater, where sight is
+                    not necessary for hunting prey.
+                </p>
+                <p>
+                    These sharks are actually eaten by humans, despite how toxic their meat is. To get rid of the toxins in the
+                    flesh, people will boil the meat, dry it, or ferment it for many months. Despite it being considered
+                    a delicacy for some cultures, the meat (called Hakarl) is considered horrible in taste, and is described as 
+                    the worst meat ever by chefs worldwide, especially with its awful smell.
+                </p>
+                <p>
+                    Probably the thing that the shark is most famous for is its lifespan. These sharks can live as long as
+                    500 years! That's twice the age of the United States, and one shark living today could have been alive when
+                    Shakespeare was writing his plays! 
+                </p>
+                <p>
+                    Like the thresher shark, Greenland sharks are ovoviviparous, meaning they give birth to live young as opposed
+                    to laying eggs. Another thing that really makes these sharks unique is that the mother will stay pregnant for
+                    18 years old and can give birth to a lot of pups. Once the pups are born, they will wander off on their own,
+                    remaining solitary just like their adult counterparts do.
+                </p>
+            </section>
+            <section class="content_container">
+                <h3>References</h3>
+                    <ul>
+                        <li><b><a 
+                                href="https://www.cnn.com/2024/12/13/science/greenland-shark-genome-longevity-study" 
+                                title="greenland shark photo" 
+                                target="_blank">
+                            Photo Source!
+                        </a></b></li>
+                        <li><a 
+                                href="https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/greenland-shark/" 
+                                title="https://www.floridamuseum.ufl.edu/" 
+                                target="_blank">
+                            Florida Museum
+                        </a></li>
+                        <li><a 
+                                href="https://en.wikipedia.org/wiki/H%C3%A1karl" 
+                                title="wikipedia.org" 
+                                target="_blank">
+                            Wikipedia (Hakarl article)
+                        </a></li>
+                        <li><a 
+                                href="https://www.youtube.com/watch?v=HCXJO8BQ2hA" 
+                                title="youtube.com" 
+                                target="_blank">
+                            Animalogic
+                        </a></li>
+                    </ul>
+            </section>
+        </article>
+     </main>
+     <footer role="contentinfo">
+        <p>
+            Sharks are an important species for the oceans and the planet as a whole. To learn more about conservation,
+            please visit:<br>
+            <!-- The address element: Indicates that the content given gives contact information for a person, organization
+                 or other type of group. It can include any type of contact information such as an address, website link,
+                 phone number or any other type of information. Here it is used in the footer as a way for the user to take 
+                 a look an organization that helps in shark conservation.-->
+            <address>
+                <a href="https://sharkstewards.org/" title="sharkstewards.org" target="_blank" class="conservation">
+                    <b>Shark Stewards</b>
+                </a>
+                <p>2150 Allston Way, Suite 460 Berkeley, CA 94704</p>
+            </address>
+        </p>
+     </footer>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thresher Shark</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- The unique elements and attributes on this file are the menu, address, time, dateTime, and type:
+            - The menu element is found nested in the header under the nav element
+            - The address element is found in nested in the footer element
+            - The time element is found in the first section element underneath the h3 "Quick Facts" in the
+              first list item
+            - The dateTime attribute is found in the same location as the time element
+            - The type attribute is found in the order list element in the first section underneath the h3
+              "Quick Facts"
+    -->
+     <header role="banner">
+        <h1>Strange World of Sharks</h1>
+        <h2>Thresher Shark</h2>
+        <nav class="nav" role="navigation">
+            <menu>
+                <!-- The menu element: a alternative to ul, and treated the same as ul
+                     by browsers. Here, it is appropriate to use it for listing the
+                     different links for navigation as an unordered list
+                -->
+                <li><a href="index.html" title="Home Page">Home Page</a></li>
+                <li><a href="thresher.html" title="Thresher Shark">Thresher Shark</a></li>
+                <li><a href="greenland.html" title="Greenland Shark">Greenland Shark</a></li>
+                <li><a href="stethacanthus.html" title="Stethacanthus">Stethacanthus</a></li>
+            </menu>
+        </nav>
+     </header>
+
+     <main role="main">
+        <article role="article">
+            <section class="content_container">
+                <h3>Quick Facts</h3>
+                <p>
+                    <!-- the type attribute: For an ol, it sets what symbol/alphabet to use, it can be the typical
+                         alphabet system we use as either capital or lowercase, or even as roman numerals as capital
+                         or lower case numbers.-->
+                    <ol type="I">
+                        <!-- time element: represents a specific period in time. Helps in converting the given text into
+                             a machine readable date. Also helps with search engine results and reminders. In this case, it
+                             is appropriate in showing a specific date/year to display when the shark was first discovered.
+                             datetime attribute: indicates the time or date specified in the time element. It must be in a
+                             specific format, with the list of allowed formats available at: 
+                             https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/time#valid_datetime_values
+                             -->
+                        <li><b><u>First discovered:</u></b> <time datetime="1788">1788</time></li>
+                        <li><b><u>Habitat:</u></b> 
+                            Warm and temperate waters all around the world, with a preference toward cool pelagic waters.
+                        </li>
+                        <li><b><u>Conservation Status:</u></b> VULNERABLE</li>
+                        <li><b><u>Size:</u></b> Males - 2.7m(8'10), Females - 3m(9'10)</li>
+                        <li><b><u>Danger to Humans:</u></b> Harmless</li>
+                    </ol>
+                </p>
+            </section>
+            <section class="content_container">
+                <h3>Overview</h3>
+                <p>
+                    <img src="images/thresher_shark.jpg" alt="Thresher Shark" class="imageFlowRight">
+                    There are three known species of Thresher Sharks: the pelagic, big-eyed, and common thresher shark. These
+                    creatures can be easily recognized by their large, long tail, which can be as big, or even bigger than their
+                    actual body.
+                </p>
+                <p>
+                    Their tail doesn't just show off their strangeness or uniqueness; it actually serves a purpose.
+                    Thresher Sharks will propel themselves forward toward a group of fish or other prey and whip their tail in
+                    an attempt to stun the fish, making it easier for them to eat. Although this tail seems like it would be dangerous
+                    to humans, threshers will actually do their best to avoid humans and will typically stay towards the bottom
+                    of the seabed. They are almost physically incapable of biting people because of the size of their mouths and
+                    their small teeth.
+                </p>
+                <p>
+                    Threshers are endothermic, meaning that they can maintain their own body heat despite the coldness of the
+                    outside environment. This is what allows them to live in pretty much all temperatures of water around the
+                    world. 
+                </p>
+                <p>
+                    These sharks are also ovoviviparous, meaning females will keep their eggs inside their bodies, where the eggs
+                    will receive nutrients from a yolk sac. Then, when they are ready, they will give birth to live pups, which is not
+                    typical of other types of fish and is only really seen in certain species of sharks.
+                </p>
+            </section>
+            <section class="content_container">
+                <h3>References</h3>
+                    <ul>
+                        <li><b><a 
+                                href="https://scuba.spanglers.com/species/alopias-pelagicus" 
+                                title="thresher photo" 
+                                target="_blank">
+                            Photo Source!
+                        </a></b></li>
+                        <li><a 
+                                href="https://www.marinebio.org/species/thresher-sharks/alopias-vulpinus/" 
+                                title="marinebio.org" 
+                                target="_blank">
+                            MarineBio Conservation
+                        </a></li>
+                        <li><a 
+                                href="https://www.youtube.com/watch?v=3YNYV2P4_Yg" 
+                                title="youtube.com" 
+                                target="_blank">
+                            SHARK BYTES
+                        </a></li>
+                        <li><a 
+                                href="https://www.youtube.com/watch?v=UtIt3cIv9Rc" 
+                                title="youtube.com" 
+                                target="_blank">
+                            Casual Geographic
+                        </a></li>
+                    </ul>
+            </section>
+        </article>
+     </main>
+     <footer role="contentinfo">
+        <p>
+            Sharks are an important species for the oceans and the planet as a whole. To learn more about conservation,
+            please visit:<br>
+            <!-- The address element: Indicates that the content given gives contact information for a person, organization
+                 or other type of group. It can include any type of contact information such as an address, website link,
+                 phone number or any other type of information. Here it is used in the footer as a way for the user to take 
+                 a look an organization that helps in shark conservation.-->
+            <address>
+                <a href="https://sharkstewards.org/" title="sharkstewards.org" target="_blank" class="conservation">
+                    <b>Shark Stewards</b>
+                </a>
+                <p>2150 Allston Way, Suite 460 Berkeley, CA 94704</p>
+            </address>
+        </p>
+     </footer>
+</body>
+</html>
